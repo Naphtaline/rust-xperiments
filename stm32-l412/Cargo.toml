@@ -4,12 +4,9 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-#defmt = "0.3.0"
-#defmt-rtt = "0.4.0"
-panic-probe = { version = "0.3.0", features = ["print-defmt"] }
 
 cortex-m = { version = "^0.7.7", features = ["critical-section-single-core"] }
 cortex-m-rt = "0.7.3"
-#hal = { package = "stm32-hal2", version = "^1.8.0", features = ["l412", "l4rt"]}
+hal = { package = "stm32-hal2", version = "^1.8.0", features = ["l412", "l4rt"]}
 panic-halt = "0.2.0"
 rtt-target = "0.5.0"
